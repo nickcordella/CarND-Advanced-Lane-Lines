@@ -300,7 +300,7 @@ def offset_calc(left_fit, right_fit, ym, xm):
     return 640*xm - np.mean([left_lane, right_lane]), right_lane-left_lane
 
 
-# In[46]:
+# In[68]:
 
 
 # window settings
@@ -308,7 +308,7 @@ window_width = 50
 window_height = 180 # Break image into4 vertical layers, as that seemed to effectively gather up all lane line pixels
 margin = 100 # How much to slide left and right for searching
 
-for fname in images:
+for fname in images[:3]:
 
     img = mpimg.imread(fname)
     # Distort, threshold and warp
@@ -355,7 +355,7 @@ for fname in images:
         output = np.array(cv2.merge((warped,warped,warped)),np.uint8)
 
     # Display the final results
-    plt.figure()
+    plt.figure(figsize=(15,15))
     plt.imshow(output)
     plt.title('Fitting results')
     plt.show()

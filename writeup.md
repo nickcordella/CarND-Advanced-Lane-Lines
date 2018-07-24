@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image2]: ./output_images/undistorted_test4.png "Undistorted Road"
 [image3]: ./output_images/thresholded_test5.jpg "Binary Example"
 [image4]: ./output_images/warped_perspective.png "Warp Example"
-[image5]: ./output_images/fit_polynomials_test3.jpg "Fit Visual"
+[image5]: ./output_images/working_poly_fit.png "Fit Visual"
 [image6]: ./output_images/projection_test1.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
